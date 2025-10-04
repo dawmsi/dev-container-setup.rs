@@ -77,25 +77,20 @@ JSON
 
 ```
 {
-    "name": "Rust Zero Trust DevPod Minimal",
+    "name": "Rust Zero Trust DevPod Minimal (VSCodium)",
     "image": "mcr.microsoft.com/devcontainers/rust:latest",
-    
     // ПРИНЦИП НАЙМЕНШИХ ПРИВІЛЕЇВ
     "remoteUser": "vscode", 
-    
-    // ВИМКНЕНО: Щоб уникнути помилок
-    "features": {}, 
-    "postCreateCommand": "", 
-    
+    "features": {},
     "customizations": {
         "devpod": {
-            "ide": "vscodium" 
+            "ide": "vscodium"
         },
         "vscode": {
+            // Перші необхідні плагіни
             "extensions": [
                 "rust-lang.rust-analyzer",
-                "tamasfe.even-better-toml",
-                "serayuzgur.crates"
+                "tamasfe.even-better-toml"
             ]
         }
     }
