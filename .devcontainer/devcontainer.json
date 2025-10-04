@@ -1,0 +1,17 @@
+{
+    "name": "Rust Zero Trust DevPod Minimal (VSCodium)",
+    "image": "mcr.microsoft.com/devcontainers/rust:latest",
+    "remoteUser": "vscode",
+    "features": {},
+    "customizations": {
+        "devpod": {
+            "ide": "vscodium"
+        },
+        "vscode": {
+            "extensions": [
+                "rust-lang.rust-analyzer",
+                "tamasfe.even-better-toml"
+            ]
+        }
+    }
+}
